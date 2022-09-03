@@ -20,9 +20,9 @@ BURIQ () {
     done
     rm -f  /root/tmp
 }
-# https://raw.githubusercontent.com/sibeesans/tuunnel-mx/main/main/allow 
+# https://raw.githubusercontent.com/anggradiantoro/bgssc/main/main/allow 
 MYIP=$(curl -sS ipv4.icanhazip.com)
-Name=$(curl -sS https://raw.githubusercontent.com/sibeesans/tuunnel-mx/main/main/allow | grep $MYIP | awk '{print $2}')
+Name=$(curl -sS https://raw.githubusercontent.com/anggradiantoro/bgssc/main/main/allow | grep $MYIP | awk '{print $2}')
 echo $Name > /usr/local/etc/.$Name.ini
 CekOne=$(cat /usr/local/etc/.$Name.ini)
 
@@ -107,20 +107,20 @@ if [ "" = "$PKG_OK" ]; then
   sleep 1
   echo ""
   sleep 1
-  echo -e "[ ${tyblue}NOTES${NC} ] 1. apt update -y"
+  echo -e "[ ${tyblue}NOTES${NC} ] 1. pertama"
   sleep 1
-  echo -e "[ ${tyblue}NOTES${NC} ] 2. apt upgrade -y"
+  echo -e "[ ${tyblue}NOTES${NC} ] 2. kedua"
   sleep 1
-  echo -e "[ ${tyblue}NOTES${NC} ] 3. apt dist-upgrade -y"
+  echo -e "[ ${tyblue}NOTES${NC} ] 3. ketiga"
   sleep 1
-  echo -e "[ ${tyblue}NOTES${NC} ] 4. reboot"
+  echo -e "[ ${tyblue}NOTES${NC} ] 4. keempat"
   sleep 1
   echo ""
   sleep 1
-  echo -e "[ ${tyblue}NOTES${NC} ] After rebooting"
+  echo -e "[ ${tyblue}NOTES${NC} ] kelima"
   sleep 1
-  echo -e "[ ${tyblue}NOTES${NC} ] Then run this script again"
-  echo -e "[ ${tyblue}NOTES${NC} ] if you understand then tap enter now"
+  echo -e "[ ${tyblue}NOTES${NC} ] keenam"
+  echo -e "[ ${tyblue}NOTES${NC} ] enter now"
   read
 else
   echo -e "[ ${green}INFO${NC} ] Oke installed"
@@ -198,7 +198,7 @@ fi
 fi
 
 echo ""
-wget -q https://raw.githubusercontent.com/anggradiantoro/bgssc/main/tools.sh;chmod +x tools.sh;./tools.sh
+wget -q https://raw.githubusercontent.com/anggradiantoro/bgssc/main/tools.sh" && chmod +x tools.sh && ./tools.sh
 rm tools.sh
 clear
 #wget -q "https://raw.githubusercontent.com/anggradiantoro/bgssc/main/ssh/cf.sh" && chmod +x cf.sh && ./cf.sh
@@ -316,7 +316,7 @@ echo ""
 echo ""
 echo "------------------------------------------------------------"
 echo ""
-echo "===============-[ Script Created By bagoesvpn
+echo "=====================-[ BagoesVpn ]-===================="
 echo ""
 echo "" | tee -a log-install.txt
 rm /root/cf.sh >/dev/null 2>&1
@@ -332,8 +332,3 @@ exit 0
 else
 reboot
 fi
-
-
-
-
-
