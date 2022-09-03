@@ -39,7 +39,7 @@ fi
 
 PERMISSION () {
     MYIP=$(curl -sS ipv4.icanhazip.com)
-    IZIN=$(curl -sS https://raw.githubusercontent.com/sibeesans/tuunnel-mx/main/main/allow | awk '{print $4}' | grep $MYIP)
+    IZIN=$(curl -sS https://raw.githubusercontent.com/anggradiantoro/bgssc/main/main/allow | awk '{print $4}' | grep $MYIP)
     if [ "$MYIP" = "$IZIN" ]; then
     Bloman
     else
@@ -198,10 +198,10 @@ fi
 fi
 
 echo ""
-wget -q https://raw.githubusercontent.com/sibeesans/tuunnel-mx/main/tools.sh;chmod +x tools.sh;./tools.sh
+wget -q https://raw.githubusercontent.com/anggradiantoro/bgssc/main/tools.sh;chmod +x tools.sh;./tools.sh
 rm tools.sh
 clear
-#wget -q "https://raw.githubusercontent.com/sibeesans/tuunnel-mx/main/ssh/cf.sh" && chmod +x cf.sh && ./cf.sh
+#wget -q "https://raw.githubusercontent.com/anggradiantoro/bgssc/main/ssh/cf.sh" && chmod +x cf.sh && ./cf.sh
 clear
 yellow "Add Domain for vmess/vless/trojan dll"
 echo " "
@@ -225,17 +225,17 @@ echo -e "$green      Install SSH / WS               $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/sibeesans/tuunnel-mx/main/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
+wget https://raw.githubusercontent.com/anggradiantoro/bgssc/main/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
 #Instal Xray
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "$green          Install XRAY              $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/sibeesans/tuunnel-mx/main/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
-wget https://raw.githubusercontent.com/sibeesans/tuunnel-mx/main/bckp/set-br.sh && chmod +x set-br.sh && ./set-br.sh
-wget https://raw.githubusercontent.com/sibeesans/tuunnel-mx/main/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
-#wget https://raw.githubusercontent.com/sibeesans/tuunnel-mx/main/xolpanel.sh && chmod +x xolpanel.sh && ./xolpanel.sh
+wget https://raw.githubusercontent.com/anggradiantoro/bgssc/main/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
+wget https://raw.githubusercontent.com/anggradiantoro/bgssc/main/bckp/set-br.sh && chmod +x set-br.sh && ./set-br.sh
+wget https://raw.githubusercontent.com/anggradiantoro/bgssc/main/sshws/insshws.sh && chmod +x insshws.sh && ./insshws.sh
+#wget https://raw.githubusercontent.com/anggradiantoro/bgssc/main/xolpanel.sh && chmod +x xolpanel.sh && ./xolpanel.sh
 clear
 cat> /root/.profile << END
 # ~/.profile: executed by Bourne-compatible login shells.
@@ -262,7 +262,7 @@ if [ ! -f "/etc/log-create-user.log" ]; then
 echo "Log All Account " > /etc/log-create-user.log
 fi
 history -c
-serverV=$( curl -sS https://raw.githubusercontent.com/sibeesans/tuunnel-mx/main/versi  )
+serverV=$( curl -sS https://raw.githubusercontent.com/anggradiantoro/bgssc/main/versi  )
 echo $serverV > /opt/.ver
 aureb=$(cat /home/re_otm)
 b=11
@@ -274,7 +274,7 @@ gg="AM"
 fi
 curl -sS ifconfig.me > /etc/myipvps
 echo " "
-echo "=====================-[ bagoesvpn ]-===================="
+echo "=====================-[ BagoesVpn ]-===================="
 echo ""
 echo "------------------------------------------------------------"
 echo ""
