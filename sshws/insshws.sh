@@ -4,9 +4,9 @@
 cd
 
 #Install Script Websocket-SSH Python
-#wget -O /usr/local/bin/ws-openssh https://raw.githubusercontent.com/sibeesans/tuunnel-mx/main/sshws/openssh-socket.py
-wget -O /usr/local/bin/ws-dropbear https://raw.githubusercontent.com/sibeesans/tuunnel-mx/main/sshws/dropbear-ws.py
-wget -O /usr/local/bin/ws-stunnel https://raw.githubusercontent.com/sibeesans/tuunnel-mx/main/sshws/ws-stunnel
+#wget -O /usr/local/bin/ws-openssh https://raw.githubusercontent.com/anggradiantoro/bgssc/main/sshws/openssh-socket.py
+wget -O /usr/local/bin/ws-dropbear https://raw.githubusercontent.com/anggradiantoro/bgssc/main/sshws/dropbear-ws.py
+wget -O /usr/local/bin/ws-stunnel https://raw.githubusercontent.com/anggradiantoro/bgssc/main/sshws/ws-stunnel
 #wget -O /usr/local/bin/ws-ovpn https://raw.githubusercontent.com/${GitUser}/test1/${namafolder}/main/ws-ovpn && chmod +x /usr/local/bin/ws-ovpn
 
 #izin permision
