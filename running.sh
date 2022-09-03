@@ -2,7 +2,7 @@
 # Welcome Information
 # Edition : Stable Edition V1.0
 # Auther  : BAGOES VPN
-# (C) Copyright 2021-2022 By BAGOESVPN
+# (C) Copyright BAGOESVPN
 # =========================================
 
 # // Exporting Language to UTF-8
